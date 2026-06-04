@@ -1,0 +1,4 @@
+Name: Jonn McCurry
+SEU username: jmccurry
+Droplet URL: http://142.93.23.6:8080/hw2/hw2.html
+https://github.com/tripolii31/2328_test/
