@@ -1,0 +1,57 @@
+/* HW3 – COSC 2328 – Professor McCurry
+   Implemented by: Jonn McCurry */
+
+/* 5.3: A theme with CSS variables */
+:root {
+  --main-bg: #f8f9fa;
+  --text-dark: #212529;
+  --primary-accent: #0275d8;
+  --hover-accent: #d9534f;
+  --box-spacing: 25px;
+}
+
+/* 5.2: Page-wide styling (body element selector) */
+body {
+  background-color: var(--main-bg);
+  color: var(--text-dark);
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 40px;
+}
+
+/* 5.4: Your name, styled by id */
+#name {
+  font-size: 64px;
+  color: var(--primary-accent);
+  margin-bottom: 10px;
+}
+
+/* 5.5: A reusable class */
+.subhead {
+  font-weight: 500;
+  color: #6c757d;
+  border-left: 4px solid var(--primary-accent);
+  padding-left: 10px;
+}
+
+/* 5.8: A hover effect - :hover pseudo-class */
+.job-title:hover {
+  color: var(--hover-accent);
+  cursor: pointer;
+}
+
+/* 5.6: An image container with the box model */
+.image-wrapper {
+  padding: var(--box-spacing); /* Uses CSS variable */
+  border: 3px dashed var(--primary-accent);
+  margin: 40px 0;
+  border-radius: 15px;
+  background-color: #ffffff;
+  display: inline-block; 
+}
+
+/* 5.7: Style the images with a descendant selector */
+.image-wrapper img {
+  width: 300px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
