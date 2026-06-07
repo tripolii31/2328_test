@@ -1,0 +1,83 @@
+<!-- HW4 – COSC 2328 – Professor McCurry
+     Implemented by: [Your Full Name] -->
+
+
+     <!-- HW4 – COSC 2328 – Professor McCurry
+     Implemented by: [Your Full Name] -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FutureWeb 2026 Registration</title>
+  <link rel="stylesheet" href="css/hw4.css">
+</head>
+<body>
+
+  <header>
+    <h1>FutureWeb 2026</h1>
+    <p>Join developers, designers, and innovators for a future-focused web technology conference.</p>
+  </header>
+
+  <main class="container">
+
+    <div class="event-info">
+      <h2>Event Details</h2>
+
+      <ul>
+        <li><strong>Date:</strong> March 18–20, 2026</li>
+        <li><strong>Location:</strong> Austin Convention Center, Austin, TX</li>
+        <li><strong>Speakers:</strong> Industry leaders in frontend, backend, and cloud development</li>
+      </ul>
+
+      <img src="images/conference.jpg" alt="People attending a web technology conference">
+    </div>
+
+    <div class="registration-form">
+      <form action="#" method="post" enctype="multipart/form-data">
+
+        <fieldset>
+          <legend>Attendee Details</legend>
+
+          <label for="attendee-name">Name</label>
+          <input type="text" id="attendee-name" name="attendee-name" required>
+
+          <label for="attendee-email">Email</label>
+          <input type="email" id="attendee-email" name="attendee-email" required>
+
+          <label for="arrival-date">Date of Arrival</label>
+          <input type="date" id="arrival-date" name="arrival-date">
+        </fieldset>
+
+        <fieldset>
+          <legend>Session Preferences</legend>
+
+          <label for="track-selection">Track Selection</label>
+          <select id="track-selection" name="track-selection">
+            <optgroup label="Frontend">
+              <option value="react">React</option>
+              <option value="vue">Vue</option>
+              <option value="css">CSS</option>
+            </optgroup>
+
+            <optgroup label="Backend">
+              <option value="node">Node.js</option>
+              <option value="python">Python</option>
+              <option value="docker">Docker</option>
+            </optgroup>
+          </select>
+
+          <label for="portfolio">Upload Resume/Portfolio</label>
+          <input type="file" id="portfolio" name="portfolio" accept=".pdf,.docx">
+        </fieldset>
+
+        <button type="submit">Register Now</button>
+
+      </form>
+    </div>
+
+  </main>
+
+</body>
+</html>
